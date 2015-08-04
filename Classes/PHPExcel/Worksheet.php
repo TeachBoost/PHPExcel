@@ -419,6 +419,7 @@ class PHPExcel_Worksheet implements PHPExcel_IComparable
     private static function checkSheetCodeName($pValue)
     {
         $CharCount = PHPExcel_Shared_String::CountCharacters($pValue);
+
         if ($CharCount == 0) {
             throw new PHPExcel_Exception('Sheet code name cannot be empty.');
         }
